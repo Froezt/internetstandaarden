@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Hypebeast</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <header>
+            <!-- aanmaken van de banner image -->
+            <div class="banner">
+                <img class="banner-image" src="images/banner.png">
+                <!--https://www.instagram.com/p/BkLgYLcgqHS/?hl=nl&taken-by=theliveitup-->
+            </div>
+            <!-- hier word ze navigatie gebasseerd op lists aangemaakt. -->
+            <nav>
+                <ul class="topnav" id="myTopnav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="fitpics.html">Fitpics</a></li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+        <p class="home3">U bent nu aangemeld!</p>
+        <input type="button" class="button1" onclick="location.href='index.html'" value="Terug naar de hoofdpagina">
+        </section>
+        <!-- aanmaken van de footer-->
+        <footer class="footer">
+            <p>Made by: Floris Roest</p>
+        </footer>
+    </main>
+</body>
+
+</html>
+<!-- invoeren van de java zodat de navigatie bar responsive word en het pannenkoeken menu tevoorschijn komt zodra het scherm minder breed word dan 600px. -->
+<script src="java/java.js"></script>

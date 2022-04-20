@@ -1,0 +1,380 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', serif;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+    /*stylen eerste article op de info pagina */
+.info {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: 3px solid black;
+    font-family: Gill Sans;
+    font-size: 20px;
+}
+
+    /*stylen van de nieuwsbrief button*/
+.button1 {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+   background-color: darkred; 
+}
+
+    /*stylen tweede article op de info pagina */
+.info2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: 3px solid black;
+    font-family: Gill Sans;
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+    text-align: center;
+}
+
+.name {
+    padding-bottom: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+    /* zodra een pagina als active staat, krijgt deze een rode bottom border van 4px */
+.active {
+    border-bottom: 4px solid red;
+}
+
+    /* stylen van de unordered list */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+    /* stylen van de navigatie knoppen */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+    /* zodra er over de knop gehovered word, ward de kleur van de knop donkerder en krijgt deze een 4px rode bottom border */
+ul.topnav li a:hover {
+    background-color: #111;
+    border-bottom: 4px solid red;
+}
+
+    /* zorgt ervoor dat het pannenkoeken menu standaard niet zichtbaar is */
+ul.topnav li.icon {
+    display: none;
+}
+
+    /* zorgt ervoor dat, zodra het scherm minder breed is dan 680 px, alleen de eerste van de navigatie list nog zichtbaar is en dat het pannenkoeken menu tevoorschijn komt. */
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+    /* zorgt ervoor dat alles goed op zijn plaats zit nadat het pannenkoeken menu tevoorschijn komt */
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+        position: relative;
+    }
+
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+    /* stylen van de banner */
+.banner {
+    z-index: 1;
+    margin: 0;
+}
+
+.banner > .banner-image {
+    width: 100%;
+    display: block;
+}
+    
+    /* stylen van de footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+ /* stylen van alle merkplaatjes en zorgen dat een vergrotings animatie hebben zodra er over ze gehovert wordt. */
+.OW img {
+    transition: .3s;
+    max-width: 175px;
+    max-height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.ow img:hover {
+    transform: scale(1.1);
+}
+
+.supr img {
+    transition: .3s;
+    max-width: 600px;
+    max-height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.supr img:hover {
+    transform: scale(1.1);
+}
+
+.bape img {
+    transition: .3s;
+    max-width: 600px;
+    max-height: auto;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.bape img:hover {
+    transform: scale(1.1);
+}
+
+.yzy img {
+    transition: .3s;
+    max-width: 400px;
+    max-height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.yzy img:hover {
+    transform: scale(1.1);
+}
+
+.palace img {
+    transition: .3s;
+    max-width: 150px;
+    max-height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.palace img:hover {
+    transform: scale(1.1);
+}
+
+.assc img {
+    transition: .3s;
+    max-width: 150px;
+    height: auto;
+    padding-right: 0;
+    padding-left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.assc img:hover {
+    transform: scale(1.1);
+}
+
+    /* stylen van de headers op de info pagina */
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+    /* aanmaken van de rijen */    
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* hier worden 3 gelijke columns aangemaakt die naast elkaar staan */
+.column {
+    -ms-flex: 32.33%;
+    flex: 32.33%;
+    max-width: 32.33%;
+    padding: 0 4px;
+}
+
+    /* elke image in de column een top margin van 8px geven en hem in het midden van de column zetten */
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+    /* Het responsive maken van de collumns zodra de breedte van het scherm minder dan 800px wordt, waardoor er maar 2 columns naast elkaar staan */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+    /* Het responsive maken van de collumns zodra de breedte van het scherm minder dan 600px wordt, waardoor er maar 1 column op het scherm te zien is */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+    
+    /* stylen van alle images op de fitpics pagina */
+.size {
+    width: 100%;
+    height: auto;
+    transition: .3s;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+    /* ervoor zorgen dat de images vergroot worden zodra je erover heen hovert. */
+.size:hover {
+    transform: scale(1.1);
+}
+    
+    /* centeren van de paragraphs op de info pagina */
+.center {
+    text-align: center;
+}
+    
+    /* image van de schoen op de info pagina stylen */
+.aj {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+    /* images van de SNKRS app style op de info pagina */
+.snkrs {
+    float: right;
+    width: 25%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+    /* stylen van de youtube video iframe onderaan de info pagina. */
+#yt {
+    width: 300px;
+    height: 160px;
+    margin-top: 50px;
+}
+
+    /* stylen van de tag onder de youtube video */
+#yttag {
+    margin-bottom: 40px;
+}
+
+    /*stylen van het tekstvield op de nieuwsbrief pagina*/
+.tekstveld {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 250px;
+    height: 50px;
+}
+
+    /* de placeholde in de textfield een grijze kleur geven*/
+::placeholder {
+    color: lightgray;
+}
+
+.home3 {
+    text-align: center;
+    margin-top: 150px;
+    margin bottom: 50px;
+    font-weight: bold;
+}
+
+fieldset {
+    border: none;
+}

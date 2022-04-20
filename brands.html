@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Hypebeast</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <header>
+            <!-- aanmaken van de banner image -->
+            <div class="banner">
+                <img class="banner-image" src="images/banner.png">
+                <!--https://www.instagram.com/p/BkLgYLcgqHS/?hl=nl&taken-by=theliveitup-->
+            </div>
+            <!-- hier word ze navigatie gebasseerd op lists aangemaakt. -->
+            <nav>
+                <ul class="topnav" id="myTopnav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="brands.html" class="active">Brands</a></li>
+                    <li><a href="fitpics.html">Fitpics</a></li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article>
+                <h1>Brands</h1>
+                <p class="center">These are a couple of examples for hypebeast brands,<br> but there are many more!</p>
+            </article>
+        </section>
+        <section>
+            <!-- Hier worden rows en columns aangemaakt en images ingezet die naar de pagina van het merk verwijzen -->
+            <div class="row">
+                <div class="column">
+                    <a target="_blank" class="OW" href="https://www.off---white.com/en/NL"><img src="images/ow.png"></a>
+                    <p class="bold">Off-White</p>
+                </div>
+                <div class="column">
+                    <a target="_blank" class="supr" href="https://www.supremenewyork.com/shop"><img src="images/supr.png"></a>
+                    <p class="bold">Supreme</p>
+                </div>
+                <div class="column">
+                    <a target="_blank" class="bape" href="https://us.bape.com/"><img src="images/bape.png"></a>
+                    <p class="bold">A Bathing Ape</p>
+                </div>
+                <div class="column">
+                    <a target="_blank" class="palace" href="https://www.palaceskateboards.com/"><img src="images/palace.png"></a>
+                    <p class="bold">Palace</p>
+                </div>
+                <div class="column">
+                    <a target="_blank" class="yzy" href="https://www.adidas.com/us/yeezy"><img src="images/yzy.png"></a>
+                    <p class="bold">Yeezy</p>
+                </div>
+                <div class="column">
+                    <a target="_blank" class="assc" href="https://www.antisocialsocialclub.com/"><img src="images/assc.png"></a>
+                    <p class="name">Anti Social Social Club</p>
+                </div>
+            </div>
+        </section>
+        <!-- aanmaken van de footer-->
+        <footer class="footer">
+            <p>Made by: Floris Roest</p>
+        </footer>
+    </main>
+</body>
+
+</html>
+<!-- invoeren van de java zodat de navigatie bar responsive word en het pannenkoeken menu tevoorschijn komt zodra het scherm minder breed word dan 600px. -->
+<script src="java/java.js"></script>
